@@ -38,10 +38,10 @@ func (me IntKey) ValueOf() interface{} {
 	return int(me)
 }
 
-// IntKey is a type of base type int that implements the Comparable interface.
-type FloatKey int
+// FloatKey is a type of base type int that implements the Comparable interface.
+type FloatKey float64
 
-// Return true if this key is less than the supplied IntKey.
+// Return true if this key is less than the supplied FloatKey.
 func (me FloatKey) LessThan(other Comparable) bool {
 	return me < other.(FloatKey)
 }
